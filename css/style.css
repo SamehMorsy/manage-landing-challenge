@@ -1,0 +1,350 @@
+:root {
+    --primary-Bright-Red: hsl(12, 88%, 59%);
+    --primary-Dark-Blue: hsl(228, 39%, 23%);
+    --primary-Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --primary-Very-Dark-Blue: hsl(233, 12%, 13%);
+    --primary-Light-Grayish-Blue: hsl(226, 42%, 82%);
+    --primary-Very-Pale-Red: hsl(13, 100%, 96%);
+    --primary-Very-Light-Gray: hsl(0, 0%, 98%);
+    --swiper-theme-color: var(--primary-Bright-Red) !important;
+}
+
+body,
+html {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Be Vietnam Pro";
+    color: var(--primary-Dark-Blue);
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.main-btn {
+    background-color: var(--primary-Bright-Red);
+    color: var(--primary-Very-Light-Gray);
+    padding: 0.8em 2em;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.139);
+    z-index: 9999;
+}
+
+.btn:hover {
+    background-color: rgba(252, 154, 129, 0.635);
+    color: var(--primary-Very-Light-Gray);
+}
+
+.team-btn {
+    border: 0px;
+}
+
+.team-btn:hover {
+    color: rgba(252, 154, 129, 0.635);
+    background-color: var(--primary-Very-Light-Gray);
+}
+
+.shape {
+    position: absolute;
+    height: 18em;
+    width: 76%;
+    border-radius: 130px;
+    background-color: var(--primary-Very-Pale-Red);
+    z-index: -1;
+    top: -25%;
+    transform: translateX(79%) skew(0.13turn, -40deg);
+}
+
+.shape-2 {
+    position: absolute;
+    height: 16em;
+    width: 70%;
+    border-radius: 130px;
+    display: flex;
+    background-color: var(--primary-Very-Pale-Red);
+    z-index: -1;
+    transform: translateX(-80%) skew(0.13turn, -40deg);
+    margin-top: 10em;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 10em;
+}
+
+.feuturs {
+    margin-bottom: 3em;
+}
+
+.manage-p {
+    width: 70%;
+}
+
+.no {
+    background-color: var(--primary-Bright-Red);
+    color: var(--primary-Very-Light-Gray);
+    padding: 0.3em 1em;
+    border-radius: 20px;
+    font-size: 19px;
+    margin-left: -4em;
+}
+
+.no-1 {
+    margin-left: 3em;
+    margin-top: -2em;
+}
+
+.card-1 {
+    background-color: var(--primary-Very-Light-Gray);
+    padding: 2em;
+    margin-right: 2em;
+}
+
+.person-img {
+    position: static;
+    margin-top: -6em;
+    width: 100px;
+}
+
+.article {
+    margin-top: 2em;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+    margin-bottom: -2em;
+}
+
+.swiper-pagination {
+    position: relative;
+    padding-top: 1em;
+}
+
+.team div {
+    display: flex;
+    z-index: -1;
+    margin-top: 20em;
+    background-color: var(--primary-Bright-Red);
+    padding: 5em 10em;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text {
+    width: 45%;
+    font-size: 3em;
+    color: var(--primary-Very-Light-Gray);
+}
+
+.team button {
+    background-color: var(--primary-Very-Light-Gray);
+    color: var(--primary-Bright-Red);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.318);
+}
+
+.footer {
+    background-color: var(--primary-Very-Dark-Blue);
+    color: var(--primary-Very-Light-Gray);
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--primary-Very-Light-Gray);
+}
+
+.footer a:hover {
+    color: var(--primary-Bright-Red);
+}
+
+.footer .logo img {
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+input {
+    color: var(--primary-Bright-Red);
+}
+
+#warning {
+    color: var(--primary-Bright-Red);
+    display: none;
+}
+
+
+.img-shape {
+    position: absolute;
+    z-index: 0;
+    height: 38vh;
+    transform: translateX(22%) translateY(-6%);
+}
+
+@media (max-width:1024px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .img-shape {
+        transform: translateX(-11%) translateY(6%);
+    }
+
+    .text {
+        width: 70%;
+    }
+}
+
+@media (max-width: 988px) {
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .special {
+        display: none;
+    }
+
+    form {
+        position: relative;
+        top: 0%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .form {
+        text-align: end !important;
+        margin-top: -25em;
+    }
+
+    .copyright {
+        position: relative;
+        margin-top: 32%;
+    }
+    .review{
+        margin-top: 8em;
+    }
+    .social-media {
+        width: 90em;
+    }
+    #warning{
+        margin-right: -13em;
+    }
+    /* #off-screen-menu {
+        background-color: var(--primary-Dark-Grayish-Blue);
+        height: 100vh;
+        width: 100%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        transition: 0.3s ease;
+    } */
+
+    /* .active {
+        left: 0 !important;
+    } */
+}
+
+@media (max-width: 670px) {
+    h1 {
+        width: 80%;
+    }
+    .social-media a {
+        font-size: 1em;
+    }
+    .feuturs .container div{
+        text-align: center !important;
+        align-items: center;
+    }
+    h2{
+        margin-left: em;
+    }
+    .manage-p{
+        margin-left: 5em;
+    }
+    .feuturs-p{
+        width: 100%;
+    }
+    .test-row {
+        display: flex;
+        flex-flow: row rap;
+    }
+    .main-section{
+        margin-top: 19em;
+    }
+
+    .test-row>div {
+        display: flex;
+        width: 100%;
+        align-items: center !important;
+        flex-direction: column;
+    }
+
+    .co-bg{
+        width: 100%;
+        padding-left: 1em;
+        background-color: var(--primary-Very-Pale-Red);
+        text-align: left;
+        margin-left: 2em;
+        }
+
+    .image-main {
+        order: 1 !important;
+        margin-top: -17em;
+    }
+
+    .description {
+        order: 2 !important;
+    }
+    .team div{
+        flex-direction: column;
+    }
+    .text{
+        text-align: center;
+        width: 150%;
+    }
+}
