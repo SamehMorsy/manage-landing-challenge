@@ -1,4 +1,5 @@
-# website link: ### https://samehmorsy.github.io/manage-landing-challenge/
+# website link: 
+## https://samehmorsy.github.io/manage-landing-challenge/
 # Frontend Mentor - Manage landing page
 
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
