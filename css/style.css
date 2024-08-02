@@ -347,4 +347,13 @@ input {
         text-align: center;
         width: 150%;
     }
+    .logo{
+        margin-right:1em;
+    }
+    .form{
+        margin-right:-2em;
+    }
+    .copyright{
+        margin-right:-2em;
+    }
 }
