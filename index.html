@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Manage Landing Page</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -214,6 +215,24 @@
         clickable: true,
       },
     });
+  const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        if (document.documentElement.scrollWidth > window.innerWidth) {
+          document.body.style.overflowX = 'hidden';
+        } else {
+          document.body.style.overflowX = 'auto';
+        }
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  document.querySelectorAll('*').forEach(el => {
+    if (el.scrollWidth > el.clientWidth) {
+      console.log(el);
+    }
+  });
+
+
     function numSlide(){
       let screenWidth = window.innerWidth;
       if (screenWidth >= 1000) {
