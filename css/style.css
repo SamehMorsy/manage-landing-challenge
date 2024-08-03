@@ -10,13 +10,19 @@
 }
 body,
 html {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
-    max-width: 120%;
+    max-width: 100% !important;
     font-size: 14px;
     font-family: "Be Vietnam Pro";
     color: var(--primary-Dark-Blue);
     overflow-x: hidden !important;
 }
+
 
 .main-btn {
     background-color: var(--primary-Bright-Red);
