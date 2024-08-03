@@ -44,7 +44,8 @@ html {
 
 .shape {
     position: absolute;
-    height: 18em;
+    overflow-x: hidden;
+    height: 15%;
     width: 76%;
     border-radius: 130px;
     background-color: var(--primary-Very-Pale-Red);
@@ -302,6 +303,9 @@ input {
     }
     h2{
         margin-left: em;
+    }
+    .swiper-slide{
+        margin-right:-2em;
     }
     .manage-p{
         margin-left: 5em;
