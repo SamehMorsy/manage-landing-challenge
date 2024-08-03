@@ -12,11 +12,11 @@
 body,
 html {
     box-sizing: border-box;
-    width: 100%;
+    max-width: 100%;
     font-size: 14px;
     font-family: "Be Vietnam Pro";
     color: var(--primary-Dark-Blue);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     /* Prevent horizontal scrolling */
 }
 
@@ -45,7 +45,7 @@ html {
 .shape {
     position: absolute;
     overflow-x: hidden;
-    height: 15%;
+    height: 18em;
     width: 76%;
     border-radius: 130px;
     background-color: var(--primary-Very-Pale-Red);
@@ -305,7 +305,7 @@ input {
         margin-left: em;
     }
     .swiper-slide{
-        margin-right:-2em;
+        margin: auto;
     }
     .manage-p{
         margin-left: 5em;
