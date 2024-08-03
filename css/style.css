@@ -8,16 +8,14 @@
     --primary-Very-Light-Gray: hsl(0, 0%, 98%);
     --swiper-theme-color: var(--primary-Bright-Red) !important;
 }
-
 body,
 html {
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 100% !important;
     font-size: 14px;
     font-family: "Be Vietnam Pro";
     color: var(--primary-Dark-Blue);
     overflow-x: hidden !important;
-    /* Prevent horizontal scrolling */
 }
 
 .main-btn {
@@ -44,7 +42,6 @@ html {
 
 .shape {
     position: absolute;
-    overflow-x: hidden;
     height: 18em;
     width: 76%;
     border-radius: 130px;
@@ -202,20 +199,23 @@ input {
     position: absolute;
     z-index: 0;
     height: 38vh;
-    transform: translateX(22%) translateY(-6%);
+    transform: translateX(-15%) translateY(-18%);
+}
+@media (min-width:1440px) {
+    .shape{
+        transform: translateX(62%) skew(0.13turn, -40deg);
+    }
 }
 
 @media (max-width:1024px) {
     body {
         font-size: 12px;
     }
-
     h1 {
         font-size: 2.5em;
     }
-
     .img-shape {
-        transform: translateX(-11%) translateY(6%);
+        display: none;
     }
 
     .text {
@@ -267,7 +267,7 @@ input {
         width: 90em;
     }
     #warning{
-        margin-right: -13em;
+        margin-right: -16em;
     }
     /* #off-screen-menu {
         background-color: var(--primary-Dark-Grayish-Blue);
@@ -288,6 +288,10 @@ input {
     /* .active {
         left: 0 !important;
     } */
+    .shape{
+        top: -6%;
+        transform: translateX(20%) skew(0.129turn, -55deg);
+    }
 }
 
 @media (max-width: 670px) {
@@ -303,9 +307,6 @@ input {
     }
     h2{
         margin-left: em;
-    }
-    .swiper-slide{
-        margin: auto;
     }
     .manage-p{
         margin-left: 5em;
@@ -327,7 +328,6 @@ input {
         align-items: center !important;
         flex-direction: column;
     }
-
     .co-bg{
         width: 100%;
         padding-left: 1em;
@@ -335,12 +335,10 @@ input {
         text-align: left;
         margin-left: 2em;
         }
-
     .image-main {
         order: 1 !important;
         margin-top: -17em;
     }
-
     .description {
         order: 2 !important;
     }
@@ -351,13 +349,18 @@ input {
         text-align: center;
         width: 150%;
     }
-    .logo{
-        margin-right:1em;
+    #warning{
+        margin-right: -9em;
     }
-    .form{
-        margin-right:-2em;
+    .logo {
+        margin-right: 1em;
     }
-    .copyright{
-        margin-right:-2em;
+    
+    .form {
+        margin-right: -2em;
+    }
+    
+    .copyright {
+        margin-right: -2em;
     }
 }
