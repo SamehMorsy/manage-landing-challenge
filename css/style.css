@@ -250,7 +250,7 @@ input {
 
     form {
         position: relative;
-        top: 0%;
+        top: 10em;
     }
 
     .logo {
@@ -340,7 +340,7 @@ input {
         background-color: var(--primary-Very-Pale-Red);
         text-align: left;
         margin-left: 2em;
-        }
+    }
     .image-main {
         order: 1 !important;
         margin-top: -17em;
@@ -368,5 +368,45 @@ input {
     
     .copyright {
         margin-right: -2em;
+    }
+}
+@media (max-width:500px) {
+    .form-d{
+        width: 100%;
+        position:relative;
+        order: 1;
+        margin-top: 15em;
+        font-size: 1.6em;
+        padding-right: 4em;
+    }
+    .copyright {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        bottom: -18em;
+        font-size: 0.7em;
+    }
+    .logo{
+        width: 100%;
+        order: 5;
+
+    }
+    .footer-links.one{
+        margin-left: 1em;
+    }
+    .social-media{
+        font-size: 3em;
+        margin-left: 1em;
+        order: 4;
+    }
+    .footer-links{
+        text-align: left;
+
+        order: 2;
+        width: 45%;
+        margin-top: -15em;
     }
 }
