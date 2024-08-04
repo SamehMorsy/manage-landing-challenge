@@ -394,6 +394,12 @@ input {
         order: 5;
 
     }
+    #warning{
+        margin:0px;
+    }
+    .form{
+        width:100%;
+    }
     .footer-links.one{
         margin-left: 1em;
     }
