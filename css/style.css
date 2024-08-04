@@ -378,6 +378,7 @@ input {
         margin-top: 15em;
         font-size: 1.4em;
         padding-right: 4em;
+        margin-bottom:2em;
     }
     .copyright {
         position: absolute;
@@ -387,7 +388,7 @@ input {
         justify-content: center;
         text-align: center;
         bottom: -17em;
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
     .logo{
         width: 100%;
